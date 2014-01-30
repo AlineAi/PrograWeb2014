@@ -1,0 +1,11 @@
+1.- Conectarnos a nuestra cuenta de Git
+2.- Creamos el Repositorio
+3.- Clonamos el Repositorio a "PrograWeb2014"
+4.- Creamos archivo "integrantes"
+5.- Actualizamos el repositorio con el Add
+6.- Cada integrante del equipo modificamos el archivo
+  *Escribimos nuestros nombres en el archivo, lo guardamos
+  *Hicimos un commit para guardar el progreso
+  
+7.- Hicimos un push para actualizar el repositorio master con los commits realizados
+
