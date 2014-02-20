@@ -1,0 +1,198 @@
+/*@font-face {
+  font-family: 'Gabriela';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gabriela'), local('Gabriela-Regular'), url(font/founts1.woff) format('woff');
+}
+
+body{
+	font-size: 12px Helvetica; /*comentarios*//*
+}
+
+h1{
+	/*color: #00ff00; *//*
+	font-family: 'Gabriela', serif;
+}
+
+h2, h3{
+	font-family: 'Frijole', cursive;
+}
+
+ul, p{
+	font-family: 'Allura', cursive;
+}
+*/
+
+body{
+	font: 16px/26px Helvetica;
+	line-heigth: 1.4;
+}
+
+.container{
+	width :90%;
+	margin:0 5%;
+}
+
+.header-container{
+	/*
+	border: 20px;
+	border-top: 20px;
+	border-left: 20px;
+	border-right: 20px;
+	border: 10px 10px 12px 12px;*/
+	
+	border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main inside{
+	border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main inside{
+	background: #f16529;
+}
+
+.title{
+	color: white;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav a{
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px 0;
+	
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	
+	color: white;
+	background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited{
+	color: blue;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+.main {
+	padding: 30px 0;
+}
+
+.main article h1{
+	font-size: 2em;
+}
+
+.main aside{
+	color: white;
+	padding: 0px 5% 10px;
+}
+
+.footer-container footer{
+	color: white;
+	padding: 20px 0;
+}
+
+.clear:before,
+.clear:after{
+	content: " ";
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+
+@media only screen and (min-width: 480px){
+	h1{
+		color: red;
+	}
+	nav a{
+		float: left;
+		width: 27%;
+		margin: 0 1.7%;
+		padding: 25px 2%;
+		margin-bottom: 0;
+	}
+	nav li:first-child a {
+		margin-left: 0;
+	}
+	nav li:last-child a {
+		margin-right: 0;
+	}
+	nav ul li{
+		display: inline;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
