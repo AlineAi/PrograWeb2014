@@ -1,0 +1,13 @@
+body{
+	font-size: 12px Helvetica;
+	}/*comentarios*/
+
+	/*si se pone "." se esta seleccionando LOS elementos que tengan la clase header container, si se usa 
+	"#" se estan seleccionando EL elemento que contengan titulo1 */
+.header-container{
+	color:red;
+}
+.title{
+	color:#333300;
+}
+
