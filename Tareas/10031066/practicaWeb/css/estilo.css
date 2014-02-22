@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Jolly Lodger';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jolly Lodger'), local('JollyLodger'), url(fonts/Jolly.woff) format('woff');
+}
+
+body{
+	/* */
+	font-size: 12px;
+}
+
+.header-container{
+		color:red;
+		font-family: 'Jolly Lodger', cursive;
+
+}
+
+#titulo1{
+		color:#333300;
+		font-family: 'Peralta', cursive;
+}
+
+h1{
+	font-family: 'Press Start 2P', cursive;
+}
+
+h2{
+	font-family: 'Akronim', cursive;
+}
+
+P{
+	font-family: 'Ceviche One', cursive;
+}
