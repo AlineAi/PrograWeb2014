@@ -4,7 +4,6 @@ $(document).ready(
 			function(){
 				$('img').hide(1000);
 			}
-			
 		);
 
 		
@@ -12,7 +11,7 @@ $(document).ready(
 			function(){
 				$('img').show(1000);
 			}
-		)
+		);
 		
 	}
 	
