@@ -1,0 +1,47 @@
+body {
+	background-image: url(../img/verse-bg.jpg);
+	background-position: 50% 155%;
+	background-repeat: no-repeat;
+}
+
+h2{
+	color: white;
+	text-align: center;
+	}
+
+.img1{
+	padding-top: 100px;
+}
+
+.img5{
+
+	padding-top: 150px;
+	margin: 0;
+}
+
+
+.btn{
+	background-color: #737373;
+	border-color: #737373;
+	color:white;
+
+
+	margin-top: 15px;
+	padding: 8px 36px; 
+    font-size: 13px;
+    line-height: normal;
+
+}
+
+
+.form{
+	background-color: #737373;
+	border-color: white	;
+	color:white;
+
+	padding: 6px 30px; 
+    font-size: 13px;
+    line-height: normal;
+
+}
+
