@@ -1,0 +1,44 @@
+body{ 
+background-image: url("C:/xampp/htdocs/prograwebindex/bootstrap/img/aa.jpg"); 
+background-repeat: no-repeat; 
+background-size: 100%; 
+}
+
+.color1{
+	border: 1px solid black;
+	background-color: gray; 
+	color: white;
+}
+
+.centered
+{
+	text-align: center;
+}
+.i1{
+
+	background-image: url("C:/xampp/htdocs/prograwebindex/bootstrap/img/i1.png"); 
+	background-repeat: no-repeat; 
+	background-size: 100%; 
+}
+
+.i2{
+	background-image: url("C:/xampp/htdocs/prograwebindex/bootstrap/img/i2.png"); 
+	background-repeat: no-repeat; 
+	background-size: 100%; 
+}
+.i3{
+	background-image: url("C:/xampp/htdocs/prograwebindex/bootstrap/img/i3.png"); 
+	background-repeat: no-repeat; 
+	background-size: 100%; 
+}
+
+.color2{
+	background-color: #FFFF00;
+}
+.color3{
+	background-color: #FF9900;
+}
+.color4{
+	background-color: #FFCC99;
+}
+

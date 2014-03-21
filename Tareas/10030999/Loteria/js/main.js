@@ -4,10 +4,16 @@ $(document).ready(
 		$('img').click(
 		  function(){
 			  if (flag==0) {
-			 	 $(this).fadeTo( "slow", 0.3); flag=1;  
+			 	 $(this).animate({left:'250px',
+    opacity:'0.5',
+    height:'150px',
+    width:'150px'});  
 			  }
 			  else{
-			  	 $(this).fadeTo("slow",1); flag=0;
+			  	 $(this).animate({left:'250px',
+    opacity:'0.5',
+    height:'150px',
+    width:'150px'});
 			  }
 			  
 		 }

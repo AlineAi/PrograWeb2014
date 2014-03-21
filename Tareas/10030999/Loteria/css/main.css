@@ -1,4 +1,10 @@
 ﻿body{
 	background-image: url(../images/pat.png);
-	background-color: red;
+	
+}
+
+h1{
+	text-align: center;
+	color: white;
+	margin: 1% 3%;
 }
