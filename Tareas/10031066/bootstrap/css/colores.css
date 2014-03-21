@@ -16,3 +16,10 @@
 .color6{
 	background-color:#366;
 }
+.caracol{
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:300px;
+	left:100px;
+}
