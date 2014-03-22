@@ -8,7 +8,8 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/pag2.css" rel="stylesheet">
+    <link href="css/caracol.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,19 +19,43 @@
     <![endif]-->
   </head>
   <body>
-    
     <div class="container-fluid">
 
           <div class="row">
-              <div class="col-md-6"><br>
-              <div class="col-md-6"><br>
+              <div class="col-md-4"><br>
+     
+                <h1>Caracol</h1>
+
+              <p>El caracol esta atrapado temporalmente en un Túnel, para salir sube por la pared de día, pero durante la noche duerme y se resbala.
+                Ingresa cuantos metros sube durante el día y cuantos desciende en la noche para saber cuanto tiempo le tomará en salir
+              </p><br><br>
+
+               <form role="form">
+                  <div class="form-group">
+                    <label for="InputS">Distancia que sube en el dia:</label>
+                     <input type="Sube" class="form-control" id="Sube" placeholder="Metros:">
+                  </div><br>
+                  <div class="form-group">
+                    <label for="InputR">Distancia que resbala en la noche:</label>
+                    <input type="Baja" class="form-control" id="Res" placeholder="Metros:">
+                  </div><br><br>
+
+
+                  <button type="button" class="btn btn-success" id="Start" onclick="setResetInterval(true)">Empezar</button>
+                <button type="button" class="btn btn-danger" id="Stop" onclick="setResetInterval(false)">Detener</button>
+                  </form>
+
+            </div>
+
+              <div class="col-md-8"><br>
 
               </div>
-          </div>
+          
+      </div>
       </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
