@@ -15,6 +15,9 @@
 	$pass=true;
 	$cp=true;
 	$rfc=true;
+	$foto=true;
+	$uploads_dir = '../img';
+	
 	if (isset($_POST["email"])) {
 		//echo "HOLA";
 		$es = new Es();
@@ -24,23 +27,37 @@
 		$rfc = $es->RFC($_POST["rfc"]);
 		$Registra = new Registro();
 		
-		if($correo && $pass && $cp && $rfc){
+		if($correo && $pass && $cp && $rfc && $foto){
 			$Registra->email = $_POST["email"];
 			$Registra->username = $_POST["username"];
 			$Registra->password = $_POST["password"];
-			$Registra->foto = $_POST["foto"];
 			$Registra->rfc = $_POST["rfc"];
 			$Registra->cp = $_POST["cp"];
 			
 			
-			$Registra->inserta($Registra->get_atributos());
-			echo "se ha Agregado nuevo registro a la base de datos";
+			if ($_FILES['foto']["error"] > 0)
+			{
+				echo "Error: " . $_FILES['foto']['error'] . "<br>";
+			}
+			else
+			{
+				
+				$tmp_name = $_FILES["foto"]["tmp_name"];
+				$name = $_FILES["foto"]["name"];
+				echo $uploads_dir."/".$name;
+				$Registra->foto = $name;
+				move_uploaded_file($tmp_name, "$uploads_dir/$name");
+				
+				
+				$Registra->inserta($Registra->get_atributos());
+				echo "se ha Agregado nuevo registro a la base de datos";
+			}
 		}
 	}
 ?>	
 
 
-<form action="" method="POST">
+<form action="" method="POST" ENCTYPE="multipart/form-data">
 	<label for="profundidad">Correo</label>
 		<input type="text" name="email" id="email" value=<?php if(isset($_POST["email"])){ echo $_POST["email"]; }?> ><?php if(!$correo){echo "No es un email aceptable";} ?>
 		
@@ -50,7 +67,7 @@
 		<input type="text" name="password" id="password" value=<?php if(isset($_POST["password"])){ echo $_POST["password"]; }?>><?php if(!$pass){echo "No es una contraseña aceptable";} ?>
 		
 	<label for="dias">Foto</label>
-		<input type="text" name="foto" id="foto">
+		<input type="file" name="foto" id="foto">
 	<label for="dias">RFC</label>
 		<input type="text" name="rfc" id="rfc" value=<?php if(isset($_POST["rfc"])){ echo $_POST["rfc"]; }?>><?php if(!$rfc){echo "No es un RFC aceptable";} ?>
 	
